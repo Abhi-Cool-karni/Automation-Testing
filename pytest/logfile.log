@@ -22,3 +22,21 @@
 2023-07-24 20:03:05,309 : INFO : test_editProfile : Abhishek
 2023-07-24 20:03:05,309 : INFO : test_editProfile : Kulkarni
 2023-07-24 20:03:05,309 : INFO : test_editProfile : abhishekkul2000@gmail.com
+2023-07-24 20:06:26,778 : INFO : test_editProfile : ['Abhishek', 'Kulkarni', 'abhishekkul2000@gmail.com']
+2023-07-24 20:06:26,778 : INFO : test_editProfile : Abhishek
+2023-07-24 20:06:26,778 : INFO : test_editProfile : Kulkarni
+2023-07-24 20:06:26,778 : INFO : test_editProfile : abhishekkul2000@gmail.com
+2023-07-24 20:06:26,783 : DEBUG : test_logging : Debug is executed
+2023-07-24 20:06:26,783 : INFO : test_logging : Specific Information is optional if argument is blank then runtime info will save.
+2023-07-24 20:06:26,783 : WARNING : test_logging : Something is in warning mode.
+2023-07-24 20:06:26,783 : ERROR : test_logging : A major error has happened
+2023-07-24 20:06:26,784 : CRITICAL : test_logging : Critical issue
+2023-07-24 20:06:45,664 : INFO : test_editProfile : ['Abhishek', 'Kulkarni', 'abhishekkul2000@gmail.com']
+2023-07-24 20:06:45,664 : INFO : test_editProfile : Abhishek
+2023-07-24 20:06:45,664 : INFO : test_editProfile : Kulkarni
+2023-07-24 20:06:45,664 : INFO : test_editProfile : abhishekkul2000@gmail.com
+2023-07-24 20:06:45,668 : DEBUG : test_logging : Debug is executed
+2023-07-24 20:06:45,669 : INFO : test_logging : Specific Information is optional if argument is blank then runtime info will save.
+2023-07-24 20:06:45,670 : WARNING : test_logging : Something is in warning mode.
+2023-07-24 20:06:45,670 : ERROR : test_logging : A major error has happened
+2023-07-24 20:06:45,670 : CRITICAL : test_logging : Critical issue
