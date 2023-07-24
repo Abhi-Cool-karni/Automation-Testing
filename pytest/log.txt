@@ -1,0 +1,10 @@
+LOGS	
+
+Log levels Hierarchy:-
+Debug	
+Info	
+warning	
+error	
+Critical	
+
+2019-02-17 12:40:14,798: ERROR: <testcasenames: Fatal error in submitting credit card payment on step 4. Cannot continue	
