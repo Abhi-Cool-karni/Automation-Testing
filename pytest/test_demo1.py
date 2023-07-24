@@ -12,6 +12,8 @@
 #* You can make testcase pre-requisites, post-requisites run by @pytest.fixture()  
 #* Instead of duplicating task like browser invoking for each testcase instead we can use conftest.py which will common for all pytest files.
 #* Fixtures are used as setup and tear down methods for test cases- conftest file to generalize fixture and make it available to all test cases.
+#* Datadriven and parameterization can be done with return statements in tuple format	
+#* #when you define fixture scope to class only, it will run once before class initiated and at the end.	
 
 
 import pytest

@@ -11,3 +11,10 @@ def setup():
 def dataLoad():
     print("user profile data is being created")
     return ["Abhishek","Kulkarni","abhishekkul2000@gmail.com"]
+
+
+# Driving multiple sets of data through fixtures.
+
+@pytest.fixture(params=[('chrome','Abhishek', 'Kulkarni'),('firefox','IE')])
+def crossBrowser(request):
+    return request.param
