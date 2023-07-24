@@ -1,9 +1,11 @@
+import inspect
 import logging
 
 class BaseClass:
 
     def getLogger(self):
-        logger = logging.getLogger(__name__)
+        loggerName = inspect.stack()[1][3]
+        logger = logging.getLogger(loggerName)
 
         # File location 
         fileHandler = logging.FileHandler("logfile.log")

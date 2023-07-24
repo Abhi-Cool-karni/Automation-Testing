@@ -12,3 +12,13 @@
 2023-07-24 19:55:24,889 : INFO : baseClassLog : Abhishek
 2023-07-24 19:55:24,889 : INFO : baseClassLog : Kulkarni
 2023-07-24 19:55:24,890 : INFO : baseClassLog : abhishekkul2000@gmail.com
+2023-07-24 19:59:43,388 : INFO : baseClassLog : Abhishek
+2023-07-24 19:59:43,389 : INFO : baseClassLog : Kulkarni
+2023-07-24 19:59:43,389 : INFO : baseClassLog : abhishekkul2000@gmail.com
+2023-07-24 20:02:05,386 : INFO : test_editProfile : Abhishek
+2023-07-24 20:02:05,397 : INFO : test_editProfile : Kulkarni
+2023-07-24 20:02:05,399 : INFO : test_editProfile : abhishekkul2000@gmail.com
+2023-07-24 20:03:05,309 : INFO : test_editProfile : ['Abhishek', 'Kulkarni', 'abhishekkul2000@gmail.com']
+2023-07-24 20:03:05,309 : INFO : test_editProfile : Abhishek
+2023-07-24 20:03:05,309 : INFO : test_editProfile : Kulkarni
+2023-07-24 20:03:05,309 : INFO : test_editProfile : abhishekkul2000@gmail.com
