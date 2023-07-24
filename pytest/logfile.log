@@ -7,3 +7,8 @@
 2023-07-24 19:32:58,574 : WARNING : test_logging : Something is in warning mode.
 2023-07-24 19:32:58,575 : ERROR : test_logging : A major error has happened
 2023-07-24 19:32:58,575 : CRITICAL : test_logging : Critical issue
+2023-07-24 19:52:34,958 : INFO : baseClassLog : ['Abhishek', 'Kulkarni', 'abhishekkul2000@gmail.com']
+2023-07-24 19:53:32,153 : INFO : baseClassLog : ['Abhishek', 'Kulkarni', 'abhishekkul2000@gmail.com']
+2023-07-24 19:55:24,889 : INFO : baseClassLog : Abhishek
+2023-07-24 19:55:24,889 : INFO : baseClassLog : Kulkarni
+2023-07-24 19:55:24,890 : INFO : baseClassLog : abhishekkul2000@gmail.com
