@@ -1,0 +1,24 @@
+Selenium Python Framework Design Plan	
+PART - 1	Pytest Unit Testing Framework	
+PART - 2	Understand Logging and HTML Reports	
+PART - 3	Implement Selenium Python Framework from Scratch (PageObject DesignPattern)	
+PART - 4	Data Driven Framework with Excel to Selenium Python Tests	
+PART - 5	(Optional)	GIT Version Control	
+
+
+PART - 1
+
+PyTest Testing Framework	
+• Install Pytest - pip install pytest	
+• Naming conventions to follow for Pytest Tests	
+• Running Pytests from command Line and PyCharm	
+• Running selected test files using pytest	
+• Running selected test Methods based on matching keywords	
+• Pytest Tags Mechanism to run tests based on functionality	
+• Failing and Skipping tests with Annotations using Pytest	
+• What are fixtures and importance of their Hooks in Pytest	
+• How Fixtures can be configured in Contest file for better readability	
+• Different scopes of fixtures and their related annotations Pre and Post conditions of the Test
+• How Parameterization can be achieved for Tests with multiple sets of data.
+• How to pass command Line arguments into PyTests.
+• HTML report Generation for Pytests Execution.
