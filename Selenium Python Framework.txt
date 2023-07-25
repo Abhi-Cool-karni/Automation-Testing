@@ -22,4 +22,4 @@ PyTest Testing Framework
 • How Parameterization can be achieved for Tests with multiple sets of data. (DONE)
 • How to pass command Line arguments into PyTests. (Skipped)
 • HTML report Generation for Pytests Execution. (DONE)
-• Log generation
+• Log generation (Done)
