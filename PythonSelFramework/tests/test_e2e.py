@@ -3,6 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from Utility.BaseClass import baseClass
 
+
 class TestOne(baseClass):
     def test_e2e(self):
         # Regular expression - instead of targeting value full give piece of information.

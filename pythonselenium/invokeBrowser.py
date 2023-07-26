@@ -1,6 +1,8 @@
 #  Chrome driver is a intermediate file from selenium test and is responsible to invoke
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+
+# Similar for edge and firefox
 try:
     service_obj = Service(
         "C:/Users/Abhishek Kulkarni/Desktop/AK/Software Testing/Automation/chromedriver_win32/chromedriver")
