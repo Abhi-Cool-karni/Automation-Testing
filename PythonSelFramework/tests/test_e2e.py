@@ -1,10 +1,9 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
+from Utility.BaseClass import baseClass
 
-from utilities.baseClass import BaseClass
-
-class TestOne(BaseClass):
+class TestOne(baseClass):
     def test_e2e(self):
         # Regular expression - instead of targeting value full give piece of information.
         # CSS - a[href*='shop']  Xpath - //a[contains(@href,'shop')]
