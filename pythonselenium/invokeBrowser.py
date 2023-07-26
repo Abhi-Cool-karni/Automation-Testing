@@ -3,11 +3,13 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 
 # Similar for edge and firefox
+# from selenium.webdriver.edge.service import Service
+
 try:
     service_obj = Service(
         "C:/Users/Abhishek Kulkarni/Desktop/AK/Software Testing/Automation/chromedriver_win32/chromedriver")
     driver = webdriver.Chrome(service=service_obj)
-
+    # driver = webdriver.edge(service=service_obj)
     driver.maximize_window()  # To maximize the window of browser
     driver.get("https://rahulshettyacademy.com")  # Hit URL on the browser
     # to get title of the web page ex: Selenium, API Testing, Software Testing & More QA Tutorials | Rahul Shetty Academy
