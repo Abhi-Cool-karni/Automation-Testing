@@ -1,15 +1,17 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
+
+from PageObjectMechanism.HomePage import HomePage
 from Utility.BaseClass import baseClass
 
 
 class TestOne(baseClass):
     def test_e2e(self):
-        # Regular expression - instead of targeting value full give piece of information.
-        # CSS - a[href*='shop']  Xpath - //a[contains(@href,'shop')]
+        # page object mechanism
+        homePage = HomePage(self.driver)
+        homePage.shopItems().click()
 
-        self.driver.find_element(By.CSS_SELECTOR, "a[href*='shop']").click()
         cards = self.driver.find_elements(By.XPATH, "//div[@class='card h-100']")
 
         # selecting and checking out the Blackberry product

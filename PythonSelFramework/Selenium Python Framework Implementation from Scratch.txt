@@ -1,9 +1,9 @@
 Selenium Python Framework Implementation from scratch:
-• Standards of writing selenium tests in framework.
-• Creating Browser invocation Fixtures in conftest.py.	
-• Setting up Base Class to hold all common Utilities.
-• Inheriting Base class to all tests to remove Fixture redundant Code.
-• Passing Command Line options to select browser at run time.
+• Standards of writing selenium tests in framework. (DONE)
+• Creating Browser invocation Fixtures in conftest.py. (DONE)	
+• Setting up Base Class to hold all common Utilities. (DONE)
+• Inheriting Base class to all tests to remove Fixture redundant Code. (DONE)
+• Passing Command Line options to select browser at run time. (DONE)
 • Implementing Page object Mechanism.
 • Smarter way of returning Page objects from Navigation Methods.
 • Creating Selenium WebDriver Custom Utilities in Base class.
