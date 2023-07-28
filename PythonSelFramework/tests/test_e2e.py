@@ -1,18 +1,23 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
-
-from PageObjectMechanism.HomePage import HomePage
 from Utility.BaseClass import baseClass
+from PageObjectMechanism.ConfirmPage import ConfirmPage
+from PageObjectMechanism.CheckoutPage import CheckoutPage
+from PageObjectMechanism.HomePage import HomePage
 
 
 class TestOne(baseClass):
     def test_e2e(self):
-        # page object mechanism
+        # Homepage
         homePage = HomePage(self.driver)
-        homePage.shopItems().click()
 
-        cards = self.driver.find_elements(By.XPATH, "//div[@class='card h-100']")
+        # Integrating point between homepage and shop page
+        checkoutPage = homePage.shopItems()
+
+        # Checkoutpage
+        # Getting list of cards
+        cards = checkoutPage.getCardTitles()
 
         # selecting and checking out the Blackberry product
         for card in cards:
@@ -21,28 +26,29 @@ class TestOne(baseClass):
                 card.find_element(By.XPATH, "div/button").click()
 
         # Moving to checkout page
-        self.driver.find_element(By.CSS_SELECTOR, "a[class*='btn-primary']").click()
+        checkoutPage.CheckoutBtn().click()
 
         # Making checkout of product
-        self.driver.find_element(By.XPATH, "//button[@class='btn btn-success']").click()
+        # Integrating point between shop page and checkoutpage
+        confirmpage = checkoutPage.productcheckout()
 
+        # Confirmpage
         # Selecting location for checkout
-        self.driver.find_element(By.ID, "country").send_keys("Ind")
+        # Sending Ind keys into location edit box
+        confirmpage.selectlocation().send_keys("Ind")
 
         # Waiting till location is load and displayed
         wait = WebDriverWait(self.driver, 10)
-        wait.until(expected_conditions.presence_of_element_located((
-            By.LINK_TEXT, "India")))
-        self.driver.find_element(By.LINK_TEXT, "India").click()
+        wait.until(expected_conditions.presence_of_element_located((ConfirmPage.location)))
+        confirmpage.getLocation().click()
 
         # Clicking an checkbox
-        self.driver.find_element(
-            By.XPATH, "//div[@class='checkbox checkbox-primary']").click()
+        confirmpage.clickingCheckbox().click()
 
         # Submitting location
-        self.driver.find_element(By.CSS_SELECTOR, "[type='submit']").click()
+        confirmpage.doLocationSubmit().click()
 
         # Success validation
-        successText = self.driver.find_element(By.CLASS_NAME, "alert-success").text
+        successMessage = confirmpage.successMessage().text
 
-        assert "Success!" in successText
+        assert "Success!" in successMessage

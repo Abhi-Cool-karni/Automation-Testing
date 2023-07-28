@@ -1,5 +1,7 @@
 from selenium.webdriver.common.by import By
 
+from PageObjectMechanism.CheckoutPage import CheckoutPage
+
 
 class HomePage:
 
@@ -9,5 +11,7 @@ class HomePage:
     shop = (By.CSS_SELECTOR, "a[href*='shop']")
 
     def shopItems(self):
-        return self.driver.find_element(*HomePage.shop)
+        self.driver.find_element(*HomePage.shop).click()
+        checkoutPage = CheckoutPage(self.driver)
+        return checkoutPage
         # self.driver.find_element(By.CSS_SELECTOR, "a[href*='shop']")
