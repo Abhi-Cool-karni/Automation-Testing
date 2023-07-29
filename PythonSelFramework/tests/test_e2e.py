@@ -38,8 +38,7 @@ class TestOne(baseClass):
         confirmpage.selectlocation().send_keys("Ind")
 
         # Waiting till location is load and displayed
-        wait = WebDriverWait(self.driver, 10)
-        wait.until(expected_conditions.presence_of_element_located((ConfirmPage.location)))
+        self.verifyLinktextPresence("India")
         confirmpage.getLocation().click()
 
         # Clicking an checkbox

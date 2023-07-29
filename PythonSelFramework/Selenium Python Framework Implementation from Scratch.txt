@@ -4,8 +4,8 @@ Selenium Python Framework Implementation from scratch:
 • Setting up Base Class to hold all common Utilities. (DONE)
 • Inheriting Base class to all tests to remove Fixture redundant Code. (DONE)
 • Passing Command Line options to select browser at run time. (DONE)
-• Implementing Page object Mechanism.
-• Smarter way of returning Page objects from Navigation Methods.
+• Implementing Page object Mechanism. (DONE)
+• Smarter way of returning Page objects from Navigation Methods. (DONE)
 • Creating Selenium WebDriver Custom Utilities in Base class.
 • Parameterizing WebDriver tests with Multiple Data	sets.
 • Organizing Data from Separate Data files and injecting into fixture at run time.
