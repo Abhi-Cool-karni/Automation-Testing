@@ -1,9 +1,5 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions
 from Utility.BaseClass import baseClass
-from PageObjectMechanism.ConfirmPage import ConfirmPage
-from PageObjectMechanism.CheckoutPage import CheckoutPage
 from PageObjectMechanism.HomePage import HomePage
 
 
