@@ -7,8 +7,8 @@ Selenium Python Framework Implementation from scratch:
 • Implementing Page object Mechanism. (DONE)
 • Smarter way of returning Page objects from Navigation Methods. (DONE)
 • Creating Selenium WebDriver Custom Utilities in Base class. (DONE)
-• Parameterizing WebDriver tests with Multiple Data	sets.
-• Organizing Data from Separate Data files and injecting into fixture at run time.
+• Parameterizing WebDriver tests with Multiple Data	sets. (DONE)
+• Organizing Data from Separate Data files and injecting into fixture at run time. (DONE)
 • Implementing Logging feature to WebDriver tests.	
 • Text Execution Html Reporting.
 • Automatic Screenshot Capture on Test failures.	
