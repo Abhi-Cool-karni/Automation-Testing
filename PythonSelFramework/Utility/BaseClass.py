@@ -1,11 +1,30 @@
+import inspect
+import logging
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.select import Select
 
+
 @pytest.mark.usefixtures("setup")
 class baseClass:
+
+    def getLogger(self):
+        loggerName = inspect.stack()[1][3]
+        logger = logging.getLogger(loggerName)
+
+        # File location
+        fileHandler = logging.FileHandler("logfile.log")
+
+        # Log format
+        formatter = logging.Formatter("%(asctime)s : %(levelname)s : %(name)s : %(message)s")
+        fileHandler.setFormatter(formatter)
+
+        logger.addHandler(fileHandler)
+
+        logger.setLevel(logging.DEBUG)
+        return logger
 
     def verifyLinktextPresence(self, text):
         wait = WebDriverWait(self.driver, 10)

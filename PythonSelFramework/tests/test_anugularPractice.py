@@ -7,6 +7,8 @@ from Utility.BaseClass import baseClass
 class TestHomePage(baseClass):
 
     def test_FormSubmission(self, getData):
+        log = self.getLogger()
+        log.info("Entering Name as "+getData["Name"])
         homepage = HomePage(self.driver)
         homepage.getName().send_keys(getData["Name"])  # NAME
         homepage.getEmail().send_keys(getData["Email"])  # EMAIL
@@ -16,7 +18,7 @@ class TestHomePage(baseClass):
         homepage.ClickRadio().click()  # Employment Status
         homepage.clickSubmit().click()  # Submit button
         message = homepage.getSuccess()
-        print(message)
+        log.info(message)
         assert "Success" in message
         self.driver.refresh()
 
