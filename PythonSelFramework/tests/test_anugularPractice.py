@@ -25,6 +25,6 @@ class TestHomePage(baseClass):
     # Implementing Data driven mechanism by removing hard coding data from tests
     # @pytest.fixture(params=[("Abhishek", "abhishekkul000@gmail.com", "abhishek@1234", "Male"), ("Priya", "priya@gmail.com", "priya@1234", "Female")])
     # Params supports both tuple and dictionary
-    @pytest.fixture(params=HomepageData.test_Homepage_Data)
+    @pytest.fixture(params=HomepageData.getTestData("Testcase2"))
     def getData(self, request):
         return request.param

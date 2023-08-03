@@ -253,10 +253,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 31-Jul-2023 at 20:56:19 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 03-Aug-2023 at 15:42:15 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>3 tests ran in 62.63 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>0 tests ran in 413.76 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -266,45 +266,4 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable" col="duration">Duration</th>
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">test_e2e.py::TestOne::test_e2e</td>
-          <td class="col-duration">21.33</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div><div><img src="test_e2e.py_TestOne_test_e2e.png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">self = &lt;tests.test_e2e.TestOne object at 0x000002CC7BAE2790&gt;<br/><br/>    def test_e2e(self):<br/>        # logging<br/>        log = self.getLogger()<br/>        # Homepage<br/>        log.info(&quot;Invoking browser and redirecting to link and filling form.&quot;)<br/>        homePage = HomePage(self.driver)<br/>    <br/>        # Integrating point between homepage and shop page<br/>        checkoutPage = homePage.shopItems()<br/>        log.info(&quot;clicking on shop text link&quot;)<br/>        # Checkoutpage<br/>        # Getting list of cards<br/>        cards = checkoutPage.getCardTitles()<br/>        log.info(&#x27;getting card details&#x27;)<br/>        # selecting and checking out the Blackberry product<br/>        for card in cards:<br/>            cardName = card.find_element(By.XPATH, &quot;div/h4/a&quot;).text<br/>            log.info(cardName)<br/>            if cardName == &quot;Blackberry&quot;:<br/>                card.find_element(By.XPATH, &quot;div/button&quot;).click()<br/>    <br/>        # Moving to checkout page<br/>        checkoutPage.CheckoutBtn().click()<br/>    <br/>        # Making checkout of product<br/>        # Integrating point between shop page and checkoutpage<br/>        confirmpage = checkoutPage.productcheckout()<br/>    <br/>        # Confirmpage<br/>    <br/>        # Selecting location for checkout<br/>        confirmpage.selectlocation().send_keys(&quot;Ind&quot;)<br/>        log.info(&quot;Entering country name as Ind&quot;)<br/>    <br/>        # Waiting till location is load and displayed<br/>        self.verifyLinktextPresence(&quot;India&quot;)<br/>        confirmpage.getLocation().click()<br/>    <br/>        # Clicking an checkbox<br/>        confirmpage.clickingCheckbox().click()<br/>    <br/>        # Submitting location<br/>        confirmpage.doLocationSubmit().click()<br/>    <br/>        # Success validation<br/>        successMessage = confirmpage.successMessage().text<br/>        log.info(&quot;Text received form application &quot;+successMessage)<br/>&gt;       assert &quot;Suuccess!&quot; in successMessage<br/><span class="error">E       AssertionError: assert &#x27;Suuccess!&#x27; in &#x27;×\nSuccess! Thank you! Your order will be delivered in next few weeks :-).&#x27;</span><br/><br/>test_e2e.py:54: AssertionError<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_e2e:test_e2e.py:11 Invoking browser and redirecting to link and filling form.
-INFO     test_e2e:test_e2e.py:16 clicking on shop text link
-INFO     test_e2e:test_e2e.py:20 getting card details
-INFO     test_e2e:test_e2e.py:24 iphone X
-INFO     test_e2e:test_e2e.py:24 Samsung Note 8
-INFO     test_e2e:test_e2e.py:24 Nokia Edge
-INFO     test_e2e:test_e2e.py:24 Blackberry
-INFO     test_e2e:test_e2e.py:39 Entering country name as Ind
-INFO     test_e2e:test_e2e.py:53 Text received form application ×
-Success! Thank you! Your order will be delivered in next few weeks :-).<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_anugularPractice.py::TestHomePage::test_FormSubmission[getData0]</td>
-          <td class="col-duration">36.17</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_FormSubmission:test_anugularPractice.py:11 Entering Name as Abhishek
-INFO     test_FormSubmission:test_anugularPractice.py:21 ×
-Success! The Form has been submitted successfully!.<br/></div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_anugularPractice.py::TestHomePage::test_FormSubmission[getData1]</td>
-          <td class="col-duration">4.30</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     test_FormSubmission:test_anugularPractice.py:11 Entering Name as Priya
-INFO     test_FormSubmission:test_anugularPractice.py:21 ×
-Success! The Form has been submitted successfully!.<br/></div></td></tr></tbody></table></body></html>
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead></table></body></html>
