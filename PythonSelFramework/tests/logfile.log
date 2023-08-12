@@ -208,3 +208,16 @@ Success! The Form has been submitted successfully!.
 2023-08-04 01:29:04,282 : INFO : test_FormSubmission : Entering Name as Abhijeet
 2023-08-04 01:29:09,923 : INFO : test_FormSubmission : ×
 Success! The Form has been submitted successfully!.
+2023-08-06 16:19:53,774 : INFO : test_FormSubmission : Entering Name as Abhijeet
+2023-08-06 16:20:00,216 : INFO : test_FormSubmission : ×
+Success! The Form has been submitted successfully!.
+2023-08-06 16:20:26,175 : INFO : test_e2e : Invoking browser and redirecting to link and filling form.
+2023-08-06 16:20:27,412 : INFO : test_e2e : clicking on shop text link
+2023-08-06 16:20:27,436 : INFO : test_e2e : getting card details
+2023-08-06 16:20:27,494 : INFO : test_e2e : iphone X
+2023-08-06 16:20:27,525 : INFO : test_e2e : Samsung Note 8
+2023-08-06 16:20:27,548 : INFO : test_e2e : Nokia Edge
+2023-08-06 16:20:27,572 : INFO : test_e2e : Blackberry
+2023-08-06 16:20:28,476 : INFO : test_e2e : Entering country name as Ind
+2023-08-06 16:20:34,133 : INFO : test_e2e : Text received form application ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
