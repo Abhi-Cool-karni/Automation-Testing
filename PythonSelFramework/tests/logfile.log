@@ -221,3 +221,27 @@ Success! The Form has been submitted successfully!.
 2023-08-06 16:20:28,476 : INFO : test_e2e : Entering country name as Ind
 2023-08-06 16:20:34,133 : INFO : test_e2e : Text received form application ×
 Success! Thank you! Your order will be delivered in next few weeks :-).
+2023-08-15 01:11:58,186 : INFO : test_FormSubmission : Entering Name as Abhijeet
+2023-08-15 01:12:05,202 : INFO : test_FormSubmission : ×
+Success! The Form has been submitted successfully!.
+2023-08-15 01:12:38,416 : INFO : test_e2e : Invoking browser and redirecting to link and filling form.
+2023-08-15 01:12:40,991 : INFO : test_e2e : clicking on shop text link
+2023-08-15 01:12:41,135 : INFO : test_e2e : getting card details
+2023-08-15 01:12:41,161 : INFO : test_e2e : iphone X
+2023-08-15 01:12:41,282 : INFO : test_e2e : Samsung Note 8
+2023-08-15 01:12:41,326 : INFO : test_e2e : Nokia Edge
+2023-08-15 01:12:41,517 : INFO : test_e2e : Blackberry
+2023-08-15 01:12:45,953 : INFO : test_e2e : Entering country name as Ind
+2023-08-15 01:18:31,065 : INFO : test_FormSubmission : Entering Name as Abhijeet
+2023-08-15 01:18:33,835 : INFO : test_FormSubmission : ×
+Success! The Form has been submitted successfully!.
+2023-08-15 01:18:58,428 : INFO : test_e2e : Invoking browser and redirecting to link and filling form.
+2023-08-15 01:19:01,300 : INFO : test_e2e : clicking on shop text link
+2023-08-15 01:19:01,844 : INFO : test_e2e : getting card details
+2023-08-15 01:19:03,030 : INFO : test_e2e : iphone X
+2023-08-15 01:19:03,279 : INFO : test_e2e : Samsung Note 8
+2023-08-15 01:19:03,652 : INFO : test_e2e : Nokia Edge
+2023-08-15 01:19:03,834 : INFO : test_e2e : Blackberry
+2023-08-15 01:19:08,611 : INFO : test_e2e : Entering country name as Ind
+2023-08-15 01:19:14,890 : INFO : test_e2e : Text received form application ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
